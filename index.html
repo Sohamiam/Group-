@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Group Management</h1>
+    </header>
+    
+    <main>
+        <section id="create-group">
+            <h2>Create a Group</h2>
+            <form id="group-form">
+                <label for="group-name">Group Name:</label>
+                <input type="text" id="group-name" required>
+                <label for="group-members">Invite Members (comma separated emails):</label>
+                <input type="text" id="group-members">
+                <button type="submit">Create Group</button>
+            </form>
+        </section>
+
+        <section id="search-groups">
+            <h2>Search Groups</h2>
+            <input type="text" id="search-input" placeholder="Search groups...">
+            <ul id="group-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
